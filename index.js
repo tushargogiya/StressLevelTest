@@ -146,34 +146,43 @@ s2=som/13*100;
 s3=of/13*100;
 s4=al/13*100;
 
-let stress=s1+s2+s3+s4
-
-console.log(stress);
+// let stress=s1+s2+s3+s4
+// console.log(stress);
 let str=document.getElementById('area');
 
 let str1=document.getElementById('str');
 
-str1.value=stress;
 
+if(nev>=11)
+{
+  str.value="You are Fit No Need to go doctor"
+str1.value='10%';
+}
 if(nev>=9)
 {
 str.value="You are Fit No Need to go doctor"
+str1.value='20%';
 }
 else if(nev>=6 && nev<9)
 {
 str.value="You are Fit No Need to go doctor but do some meditation and exercise"
+str1.value='40%';
 }
 else if(nev>=4 && nev<6)
 {
 str.value="You are Fit No Need to go doctor but take care of you"
+
+str1.value='60%';
 }
 else if(nev>=1 && nev<4)
 {
 str.value="You are not Fit Need to go doctor"
+str1.value='80+%';
 }
 else
 {
 str.value="please fill details with attention"
+str1.value='error';
 }
 
 
