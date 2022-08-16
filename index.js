@@ -1,7 +1,7 @@
 // let btn=document.getElementsByClassName("submit")
 submit=()=>{
-    console.log("hii");
- var l1 = document.getElementById("defaultCheck1");
+  console.log("hii");
+var l1 = document.getElementById("defaultCheck1");
 var l2 = document.getElementById("defaultCheck2");
 var l3 = document.getElementById("defaultCheck3");
 var l4 = document.getElementById("defaultCheck4");
@@ -155,27 +155,26 @@ if(nev>=9)
 {
 str.value="You are Fit No Need to go doctor"
 }
-else if(nev>=6)
+else if(nev>=6 && nev<9)
 {
-  str.value="You are Fit No Need to go doctor but do some meditation and exercise"
+str.value="You are Fit No Need to go doctor but do some meditation and exercise"
 }
-else if(nev>=4)
+else if(nev>=4 && nev<6)
 {
-  str.value="You are Fit No Need to go doctor but take care of you"
+str.value="You are Fit No Need to go doctor but take care of you"
 }
-else if(nev>=1)
+else if(nev>=1 && nev<4)
 {
-  str.value="You are not Fit Need to go doctor"
+str.value="You are not Fit Need to go doctor"
 }
 else
 {
-  str.value="please fill details with attention"
+str.value="please fill details with attention"
 }
 
 
 }
 submit1=()=>{
-  location.reload();
+location.reload();
 }
-
 
