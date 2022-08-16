@@ -154,19 +154,19 @@ let str1=document.getElementById('str');
 
 str1.value=stress;
 
-if(nev>som && som>of && of>al)
+if(nev>=som && nev>of && nev>al)
 {
 str.value="You are Fit No Need to go doctor"
 }
-else if(som> nev && nev>of && of>al)
+else if(som> nev && som>of && som>al)
 {
   str.value="You are Fit No Need to go doctor but do some meditation and exercise"
 }
-else if(of>som && som> al && som>nev)
+else if(of>som && of> al && of>nev)
 {
   str.value="You are Fit No Need to go doctor but take care of you"
 }
-else if(al>som && som>of && of>nev)
+else if(al>som && al>of && al>nev)
 {
   str.value="You are not Fit Need to go doctor"
 }
