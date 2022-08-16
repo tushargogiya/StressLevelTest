@@ -140,13 +140,10 @@ if (l50.checked == true){ som++;  }
 if (l51.checked == true){ of++;  } 
 if (l52.checked == true){ al++;  }
 
-let s1=nev/13*100;
-let s2=som/13*100;
-let s3=of/13*100;
-let s4=al/13*100;
 
 
-let stress=s1+s2+s3+s4;
+
+let stress=(nev+som+of+al)/13*100;
 console.log(stress);
 let str=document.getElementById('area');
 
@@ -154,19 +151,19 @@ let str1=document.getElementById('str');
 
 str1.value=stress;
 
-if(nev>=som && nev>of && nev>al)
+if(nev>=9)
 {
 str.value="You are Fit No Need to go doctor"
 }
-else if(som> nev && som>of && som>al)
+else if(nev>=6)
 {
   str.value="You are Fit No Need to go doctor but do some meditation and exercise"
 }
-else if(of>som && of> al && of>nev)
+else if(nev>=4)
 {
   str.value="You are Fit No Need to go doctor but take care of you"
 }
-else if(al>som && al>of && al>nev)
+else if(nev>=1)
 {
   str.value="You are not Fit Need to go doctor"
 }
