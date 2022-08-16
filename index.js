@@ -141,9 +141,13 @@ if (l51.checked == true){ of++;  }
 if (l52.checked == true){ al++;  }
 
 
+s1=nev/13*100;
+s2=som/13*100;
+s3=of/13*100;
+s4=al/13*100;
 
+let stress=s1+s2+s3+s4
 
-let stress=(nev+som+of+al)/13*100;
 console.log(stress);
 let str=document.getElementById('area');
 
